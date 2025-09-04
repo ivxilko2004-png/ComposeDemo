@@ -33,7 +33,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeDemoTheme {
-
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    DemoScreen(modifier = Modifier.padding(innerPadding))
+                }
             }
         }
     }
