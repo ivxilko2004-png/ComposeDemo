@@ -35,3 +35,11 @@ fun DemoText(message: String, fontSize: Float) {
         fontWeight = FontWeight.Bold
     )
 }
+
+@Preview
+@Composable
+fun DemoTextPreview() {
+    ComposeDemoTheme {
+        DemoText(message = "Welcome to Android", fontSize = 12f)
+    }
+}
